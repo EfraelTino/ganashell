@@ -1,0 +1,433 @@
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+}
+
+
+body, html {
+    background: rgb(23, 34, 55);
+   	font-family: Poppins-Regular, sans-serif;
+    background-image: url("../textures/registro.jpg");
+    overflow: hidden;
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+
+a {
+	font-family: Poppins-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
+
+p {
+	font-family: Poppins-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+}
+
+label[for="image"] {   
+ font-size: 14px;
+ font-weight: 350;
+ color: #ecc626;
+ background: rgba(113,29,29,1);
+ display: inline-block;
+ transition: all .5s;
+ cursor: pointer;
+ padding: 2px 5px !important;
+ text-transform: uppercase;
+ width: fit-content;
+ text-align: center;
+ }
+
+
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+
+label {
+  margin: 0;
+  display: block;
+}
+
+.window-notice {
+    background: rgba(33, 41, 52, .85);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+}
+.window-notice .content {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 400px;
+    min-width: 300px !important;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.0rem;
+}
+.letras_text {
+ 
+  font-family: Poppins-Medium;
+  font-size: 10px;
+  color: #fff;
+  line-height: 2;
+  text-align: left;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.letras_text2 {
+  padding-right: 5px;
+  font-family: Poppins-Medium;
+  font-size: 12px;
+  color: #fff;
+  line-height: 2;
+  text-align: left;
+  text-transform: uppercase;
+  display: block;
+
+}
+.letras_info {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: Poppins-Medium;
+  font-size: 10px;
+  color: #fff;
+  line-height: 15px;
+  text-align: left;
+  text-transform: uppercase;
+  display: block;
+
+
+}
+.letras_info2 {
+
+
+  font-family: Poppins-Medium;
+  font-size: 10px;
+  color: #fff;
+  line-height: 12px;
+  text-align: left;
+  text-transform: uppercase;
+  display: block;
+
+}
+
+.letras_info3 {
+  padding-top:5px;
+  font-family: Poppins-Medium;
+  font-size: 15px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+ 
+
+}
+.letras_info4 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-family: Poppins-Medium;
+  font-size: 20px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+
+}
+
+.letras_infoA {
+ 
+  font-family: Poppins-Medium;
+  font-size: 10px;
+  color: #fff;
+  line-height: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+
+}
+.textoGrandegris {
+  padding-top: 100px;
+  padding-bottom: 10px;
+  font-family: Poppins-Medium;
+  font-size: 30px;
+  color: rgb(206, 206, 206);
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+
+}
+.palomitas{
+    color: white;
+    padding-top: 10px;
+}
+.cajasTexto{
+   padding-bottom: 5px;
+   
+    
+}
+.cambio{
+ 
+    color: white;
+}
+
+.centradoContenido{
+    
+ /*  background-color:#7579ff;*/
+  
+    display: flex;
+    align-items: center;
+    
+}
+
+.boton_personalizado:hover{
+  color: #ba1818;
+  background-color: #ffffff;
+}
+
+.validate-input {
+  position: relative;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 70%;
+  background-color: #fff;
+  border: 1px solid #c80000;
+  border-radius: 2px;
+  padding: 4px 25px 4px 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0px;
+  pointer-events: none;
+  font-family: Poppins-Regular;
+  color: #c80000;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+  content: "\f12a";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #c80000;
+
+  display: block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 5px;
+}
+
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+.aCentro{
+  padding-left: 41%;
+}
+
+.otra{
+  text-align: center;
+  margin: 0 auto;
+}
+.formulario{
+    
+  /*  margin: 15% 0% 0% 0%;*/
+  /*  background-color: #ec26db;*/
+    position: relative;
+    
+    
+}
+@media screen and (max-width: 600px) { 
+    
+  body{
+      background-image: url(../textures/celular.jpg);
+  }   
+ }
+ 
+  
+
+@media only screen and (max-width:700px) {
+  body {
+    background-image: url(../textures/registro.jpg);
+  }
+  h1{
+  font-size: 120%;
+  }
+  .letras_info2 {
+    padding: 5px;
+    font-size: 9px;
+  }
+  .boton_personalizado{
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: #ecc626;
+    background-color: #7c1d25;
+   border-radius: 6px;
+    border: 2px solid #7c1d25;  
+  }
+}
+@media only screen and (min-width:601px) {
+.centrar{
+  display: none;
+ 
+}
+body{
+  background-image: url(../textures/celular.jpg);
+}
+}
+
+@media only screen and (max-height:768px) {
+  .formulario{
+    margin: 20% 5% 5% 5%;
+    transform: scale(1);
+  }
+  .centrar{
+    padding-top: 25%;
+    padding-left: 1%;
+  }
+}
+
+@media only screen and (max-height:657px) {
+  .formulario{
+    margin: 15% 5% 5% 5%;
+    transform: scale(0.8);
+  }
+  .centrar{
+    padding-top: 10%;
+    padding-left: 1%;
+  }
+}
+@media only screen and (max-width:600px) {
+  
+  .formulario{
+    margin-left: 25%;
+  }
+ 
+}
+@media only screen and (max-width:550px) {
+  
+  .formulario{
+    margin-left: 15%;
+    margin-top: -5%;
+  }
+ 
+}
+@media only screen and (max-width:450px) {
+  
+  .formulario{
+    margin-top: 0%;
+    margin-left: 8%;
+  }
+ 
+}
+@media only screen and (max-width:400px) {
+  
+  .formulario{
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+ 
+}
+@media only screen and (max-width:350px) {
+  
+  .formulario{
+    margin-left: 1%;
+  }
+ 
+}
+
+@media (max-width: 800px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@media screen and (max-height: 500px) { 
+    
+  body{
+    background-image: url(../textures/fondo.jpg);
+  }  
+ }

@@ -1,0 +1,106 @@
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+}
+
+* {
+    
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+    
+}
+
+
+body, html {
+  
+ background: rgb(23, 34, 55);
+ font-family: Poppins-Regular, sans-serif;
+ background-image: url("../textures/registro.jpg");
+ overflow: hidden;
+ width: auto;
+ height: 100%;
+ margin: 0;
+ padding: 0;
+ background-repeat: no-repeat;
+ background-position: top center;
+ background-size: cover;
+ background-size: 100% 100%;
+  
+    
+}
+.letras_info {
+
+  font-family: Poppins-Medium;
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+  line-height: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+      margin-top: 12%;
+  
+}
+
+.letras_info4 {
+  
+  font-family: Poppins-Medium;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  
+}
+
+.contenedor{
+  width: 300px;
+  min-height: 100px;
+
+}
+.elemento{
+  width: 300px;
+  min-height: 100px;
+
+}
+.tecnica--margin-auto .contenedor{
+  position: relative;
+/* background-color: #ecc626;*/
+}
+.tecnica--margin-auto .contenedor{
+  position:absolute;
+  left: 50%;
+  margin-left: -150px;
+  top: 50%;
+  margin-top: -50px;
+}
+@media only screen and (max-width:600px) {
+
+  body {
+    background-image: url(../textures/feliz.jpg);
+    justify-content: center ;
+    align-items: center;
+  }
+ 
+
+
+}
+
+

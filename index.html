@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compra, inscríbete y gana con Shell</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="cnt-register">
+      <div class="header">
+        <img src="assets/logoarriba.webp" alt="Logo de Shell" class="logo" />
+      </div>
+      <div class="signup-section">
+        <h2>
+          ¡Inscríbete <br />
+          para jugar!
+        </h2>
+        <form action="login.php" method="post">
+          <label for="cedula" class="user-register">Usuario Registrado</label>
+          <div>
+            <input type="text" class="cedula" id="documento" placeholder="Cédula" name="documento"/>
+            <button class="login-btn" type="submit">Iniciar Sesión</button>
+          </div>
+        </form>
+        <p class="or-text">ó</p>
+        
+        <button class="register-btn" onclick="window.location.href='formulario.php';">Registrarme</button>
+      </div>
+
+      <div class="product-section">
+        <img src="assets/bodegon.webp" alt="Productos Shell" class="products" />
+      </div>
+
+      <div class="footer">
+        <img src="assets/logoabajo.webp" alt="Logo Altipal" class="altipal-logo" />
+      </div>
+    </div>
+  </div>
+  <div class="no-disponbile">SOLO DISPONIBLE EN DIPOSITIVOS MÓVILES </div>
+</body>
+
+</html>

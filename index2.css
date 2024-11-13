@@ -1,0 +1,374 @@
+:root {
+  --red: #bf1218;
+  --yellow: #eac030;
+  --plomo: #4e4d48;
+  --white: #ffffff;
+  --black: #000000;
+
+  --transition150: all 150ms;
+  --transition300: all 300ms;
+}
+@font-face {
+  font-family: "ShellBook";
+  src: url("fonts/SHELLBOOK.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "ShellHeavy";
+  src: url("fonts/ShellHeavy.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "ShellMedium";
+  src: url("fonts/SHELLMEDIUM.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "ShellTAM-Book";
+  src: url("fonts/ShellTAM-Book.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  transition: var(--transition150);
+  border: none;
+}
+*:focus-visible {
+  outline: none;
+}
+img {
+  width: 100%;
+  display: block;
+  margin: none;
+  transition: var(--transition150);
+  height: auto;
+}
+.no-disponbile {
+  background-color: var(--red);
+  color: white;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "ShellMedium";
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: center;
+}
+.container {
+  display: none;
+  background-color: #f0f3f5;
+}
+@media only screen and (max-width: 600px) {
+  .no-disponbile {
+    display: none;
+  }
+  .container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 2rem;
+  }
+  .container div {
+    width: 100%;
+    
+  }
+  .signup-section h2,
+  .head-factura h1 {
+    color: var(--red);
+    font-family: "ShellMedium";
+    margin-top: 1.5rem;
+    line-height: 1;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .head-factura h1 {
+    color: var(--plomo);
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  .head-factura h1 span {
+    color: var(--red);
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  .head-factura h1 .light{
+    font-weight: 200;
+    color: var(--plomo);
+  }
+  .head-felicitaciones h1 {
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+  }
+  .user-register {
+    color: var(--plomo);
+    font-family: "ShellMedium";
+    margin-top: 0.5rem;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .cedular::placeholder {
+    color: var(--plomo);
+  }
+  .cedula {
+    font-family: "ShellMedium";
+    background-color: var(--white);
+    border-radius: 4px;
+    padding: 8px;
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 1rem;
+  }
+  .login-btn,
+  .upload-label {
+    font-family: "ShellMedium";
+    background-color: var(--yellow);
+    color: var(--plomo);
+    width: 100%;
+    padding: 8px 0px 14px 0px;
+    line-height: 1;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+  }
+  .upload-label {
+    font-family: "ShellHeavy";
+    font-weight: 800;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 0;
+  }
+  .upload-label svg {
+    width: 1rem;
+    height: 1rem;
+  }
+  .or-text {
+    color: var(--plomo);
+    text-align: center;
+    font-family: "ShellBook";
+    font-size: 1rem;
+    margin: 0.5rem 0rem;
+  }
+  .register-btn {
+    font-family: "ShellTAM-Book";
+    line-height: 1;
+    background-color: var(--plomo);
+    color: var(--white);
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 10px 0px 16px 0px;
+
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    /* transform: scaleY(1.2); */
+  }
+  .product-section {
+    padding: 0rem 4rem;
+    margin-top: 2rem;
+  }
+  .upload-container {
+    margin-bottom: 1rem;
+  }
+  .adjunto {
+    font-family: "ShellHeavy";
+    color: var(--plomo);
+    font-size: 0.7rem;
+    font-weight: 900;
+    line-height: 0;
+    margin-left: 0.5rem;
+  }
+  .quantity-section h3 {
+    font-family: "ShellHeavy";
+    color: var(--plomo);
+    font-size: 1.2rem;
+    font-weight: 900;
+    /* margin-left: 0.5rem; */
+  }
+  .units {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  .units input {
+    width: 20%;
+    background-color: var(--yellow);
+    color: var(--plomo);
+    font-family: "ShellBook";
+    font-weight: 800;
+    padding: 4px 4px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 1;
+  }
+  .units .units-btn {
+    width: 78%;
+  }
+  .units-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--yellow);
+    padding: 4px 6px;
+    border-radius: 4px;
+  }
+  .units-btn button {
+    font-family: "ShellBook";
+    line-height: 1;
+    font-size: 1rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: var(--plomo);
+    background: none;
+    font-weight: 800;
+  }
+  .units-btn .active {
+    background: var(--white);
+  }
+  .play-button {
+    font-family: "ShellMedium";
+    background-color: var(--red);
+    color: var(--white);
+    width: 100%;
+    padding: 8px 0px 14px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    line-height: 1;
+  }
+  .text-cont p {
+    font-family: "ShellBook";
+    font-size: 0.85rem;
+    color: var(--plomo);
+    text-align: justify;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 1rem 0;
+  }
+  .text-cont p strong {
+    font-family: "ShellHeavy";
+  }
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0.2rem 0rem;
+  }
+  .form-item label {
+    color: var(--red);
+    font-family: "ShellHeavy";
+    font-size: 1rem;
+    font-weight: 900;
+  }
+  .form-item input {
+    font-family: "ShellHeavy";
+    background-color: var(--yellow);
+    border-radius: 4px;
+    padding: 2px 8px;
+    color: var(--plomo);
+    line-height: 1;
+  }
+  .item-select select,
+  .item-select option {
+    font-family: "ShellBook";
+    background-color: var(--yellow);
+    border-radius: 4px;
+    color: var(--plomo);
+    padding: 2px 8px;
+    line-height: 1;
+    font-weight: 800;
+  }
+  .form-item .units {
+    margin-top: 0;
+  }
+  .upload-label-2 {
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    font-family: "ShellHeavy";
+    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 0;
+    width: fit-content;
+    padding: 1rem;
+  }
+  .disclaimer {
+    color: var(--plomo);
+    font-family: "ShellBook";
+    line-height: 1;
+    font-weight: 500;
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+  .terms h3 {
+    font-family: "ShellHeavy";
+    font-weight: 800;
+    color: var(--plomo);
+    margin-bottom: 0.2rem;
+  }
+  .terms label {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+    line-height: 1;
+    font-family: "ShellMedium";
+    margin: 0.3rem 0;
+    color: var(--plomo);
+  }
+  .terms label input {
+    line-height: 1;
+    margin-top: 0.15rem;
+    transform: scale(1.4);
+  }
+
+  .btn-send {
+    font-family: "ShellHeavy";
+    font-weight: 800;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 10px 20px;
+    line-height: 1;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 0.5rem 0rem;
+  }
+  .felicitaciones-item {
+    background-color: var(--white);
+    color: var(--plomo);
+    border-radius: 16px;
+    padding: 1rem;
+    font-family: "ShellTAM-Book";
+
+    font-weight: 300;
+    text-align: center;margin-bottom: 2rem;
+    line-height: 1.2;
+  }
+  .footer{
+    margin-top: 1.5rem;
+  }
+}

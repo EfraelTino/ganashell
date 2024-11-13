@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Shell</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <div class="head-factura head-felicitaciones">
+          <img src="assets/logoarriba.webp" alt="Logo de Shell" class="logo" />
+          <h1>¡Felicitaciones!</h1>
+        </div>
+        <div class="felicitaciones-item">
+          Tus datos han sido registrados correctamente. Consulta los resultados
+          del sorteo el 15 de noviembre en nuestras redes sociales de Instagram
+          y Facebook como Shell.lubricantes.colombia
+        </div>
+        <div class="head-factura">
+          <h1>
+            ¡Prepárate <span class="light">para</span>
+            <span class="ganar">ganar!</span>
+          </h1>
+        </div>
+        <div class="product-section">
+          <img
+            src="assets/bodegon.webp"
+            alt="Productos Shell"
+            class="products"
+          />
+        </div>
+        <div class="footer">
+          <img
+            src="assets/logoabajo.webp"
+            alt="Logo Altipal"  
+            class="altipal-logo"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="no-disponbile">SOLO DISPONIBLE EN DIPOSITIVOS MÓVILES</div>
+    <script>
+      function updateFileName() {
+        const fileInput = document.getElementById("file-upload");
+        const label = document.getElementById("upload-label-2");
+
+        if (fileInput.files.length > 0) {
+          label.textContent = fileInput.files[0].name;
+        }
+      }
+    </script>
+  </body>
+</html>

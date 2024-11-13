@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Shell</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <div class="header">
+          <img src="assets/logoarriba.webp" alt="Logo de Shell" class="logo" />
+        </div>
+        <div class="text-cont">
+          <p>
+            Registra tus datos, adjunta una foto de la factura de compra* para
+            quedar inscrito en el sorteo de diez motos Honda CB125F, tres
+            televisores Samsung, tres neveras Samsung y dos viajes al gran
+            premio Formula 1 en <strong>Qatar</strong>
+          </p>
+        </div>
+        <form action="#" method="post" class="shell-form">
+          <div class="form-item">
+            <label for="nombre">Nombre y Apellido</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+
+          <div class="form-item">
+            <label for="documento">Documento</label>
+            <input type="text" id="documento" name="documento" required />
+          </div>
+          <div class="form-item">
+            <label for="ciudad">Ciudad</label>
+            <input type="text" id="ciudad" name="ciudad" required />
+          </div>
+
+          <div class="form-item">
+            <label for="celular">Celular</label>
+            <input type="tel" id="celular" name="celular" required />
+          </div>
+
+          <div class="form-item">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-item item-select">
+            <label for="vehiculo">Tipo de vehículo</label>
+            <select id="vehiculo" name="vehiculo" required>
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option value="motos">Motos</option>
+              <option value="carros">Carros</option>
+              <option value="camiones">Camiones</option>
+            </select>
+          </div>
+
+          <div class="form-item">
+            <label for="producto">Tipo de producto Shell</label>
+            <input type="text" id="producto" name="producto" required />
+          </div>
+
+          <div class="quantity-section form-item">
+            <label>Cantidad</label>
+            <div class="units">
+              <input type="number" id="quantity" value="20" />
+              <div class="units-btn">
+                <button class="active">Litros</button><button>Galones</button
+                ><button>Balde</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="upload-2">
+            <label for="file-upload" class="upload-label-2" id="upload-label-2">
+              <span>Adjuntar factura</span>
+            </label>
+            <input
+              type="file"
+              id="file-upload"
+              hidden
+              onchange="updateFileName()"
+            />
+          </div>
+          <p class="disclaimer">*Sujeto a verificación de la factura.</p>
+
+          <div class="terms">
+            <h3>Términos y condiciones:</h3>
+            <label>
+              <input type="checkbox" name="autorizacion" required /> Sí,
+              autorizo el tratamiento de mis datos personales para futuras
+              campañas o eventos de la marca.
+            </label>
+            <label>
+              <input type="checkbox" name="condiciones" required /> Acepto los
+              términos y condiciones de la promoción.
+            </label>
+          </div>
+
+          <button type="submit" class="btn-send">Enviar</button>
+        </form>
+        <div class="footer">
+          <img
+            src="assets/logoabajo.webp"
+            alt="Logo Altipal"
+            class="altipal-logo"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="no-disponbile">SOLO DISPONIBLE EN DIPOSITIVOS MÓVILES</div>
+    <script>
+      function updateFileName() {
+        const fileInput = document.getElementById("file-upload");
+        const label = document.getElementById("upload-label-2");
+
+        if (fileInput.files.length > 0) {
+          label.textContent = fileInput.files[0].name;
+        }
+      }
+    </script>
+  </body>
+</html>

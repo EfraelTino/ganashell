@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+#general{
+    position: absolute;
+    display: inline-block;
+    margin:auto;
+    margin-top:auto;
+    border-radius: 10px;
+    padding: 10%;
+    background: #002e6c;
+	background: -webkit-linear-gradient(top, 002e6d, #025dd7);
+	background: -o-linear-gradient(top, #025d55, #025dd7);
+	background: -moz-linear-gradient(top, #002e6c, #025dd7);
+	background: linear-gradient(top, #002e6c, #002e6c);
+  
+    
+}
+.container {
+  background: #ffffff;
+  margin: 0 0 1rem;
+  height: 10rem;
+  display: flex;
+  /* align-items por defecto tiene el valor `stretch` */
+  align-items: start;
+}
+.center-h {
+  justify-content: center;
+}
+.center-v {
+  align-items: center;
+}
+#banner{
+    
+    float: right;
+    width: 100%;
+    height: 50;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+#espaciador{
+    margin-top: 10px;
+    text-align: right;
+    width: 100%;
+    padding-top: 10px;
+   /* border-radius: 10px;*/
+    
+}
+
+#alcentro{
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+#alcentro2{
+    margin-top: 5px;
+    margin-bottom: 100px;
+    text-align: center;
+ 
+    
+}
+#letras{
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  min-width: 120px;
+  height:25px;
+  border-radius: 15px;
+}
+#boton{
+    
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.2;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 120px;
+  height: 50px;
+  border-radius: 25px;
+  background: #9152f8;
+  background: -webkit-linear-gradient(bottom, #7579ff, #b224ef);
+  background: -o-linear-gradient(bottom, #7579ff, #b224ef);
+  background: -moz-linear-gradient(bottom, #7579ff, #b224ef);
+  background: linear-gradient(bottom, #7579ff, #b224ef);
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+#general2{
+   
+    height: 800px;
+    width: 50%;
+   
+    background-size: cover;
+    flex-flow: row;
+    
+}
+.general3{
+    
+    position: absolute;
+    margin:auto;
+    margin-top:auto;
+    border-radius: 10px;
+    padding: 10%;
+    background: url('/images/boletas.jpg') no-repeat;
+	height: 100%;
+    width: 50%;
+   justify-content: center;
+    background-size: cover;
+    flex-flow: row;
+}
+#boton2{
+    margin: 0 auto;   
+}
+.backimagen{
+   position: relative;
+    display: flex;
+    flex-flow: row;
+    width: 50%;
+    height: 100;
+    margin:auto;
+	  
+    
+}
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
+
+input:valid {
+  border: 2px solid black;
+}
